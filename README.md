@@ -5,12 +5,15 @@
 3. Accept, reject or counter the offer
 4. Get your investment and keep growing yourself
 
-# GithuB Url
+# Github Url
 
 https://github.com/anubhav14g/BITS-Borrower-Investor-Trading_Site-Backend
 
-# Heroku Login
+# Heroku Url
 
+https://anubhavg-bits.herokuapp.com
 
 # Postman Api Url
+
+https://documenter.getpostman.com/view/12499252/UVXonEAj
 
