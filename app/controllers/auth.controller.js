@@ -85,7 +85,8 @@ exports.login = async (req, res) => {
         return res.status(200).json({
             "status": "true",
             "message": "User logged in successfully",
-            "auth-token": token
+            "auth-token": token,
+            "user_type": found.type
         });
 
     }
