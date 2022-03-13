@@ -23,6 +23,9 @@ const statusBusinessEquitySchema = new mongoose.Schema({
     equity_demand_percentage:{
         type: Number,
     },
+    last_countered_user_type:{
+        type: String
+    }
 }
 ,
 {

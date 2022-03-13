@@ -194,6 +194,7 @@ exports.counterBusinessEquityApplication = async (req, res) => {
             obj.rejected=false;
             obj.amount=req.body.amount;
             obj.equity_demand_percentage=req.body.equity_demand_percentage;
+            obj.last_countered_user_type="Investor";
             obj.save();
             return res.status(200).json({
                 "status": "true",
@@ -208,7 +209,8 @@ exports.counterBusinessEquityApplication = async (req, res) => {
             "accepted": "false",
             "rejected": "false",
             "amount": req.body.amount,
-            "equity_demand_percentage": req.body.equity_demand_percentage
+            "equity_demand_percentage": req.body.equity_demand_percentage,
+            "last_countered_user_type": "Investor"
         }
 
         const new_obj= await Status_Business_Equity.create(p)

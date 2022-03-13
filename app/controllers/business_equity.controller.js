@@ -212,6 +212,7 @@ exports.counterOffer = async (req, res) => {
         obj.rejected=false;
         obj.amount=_b.amount;
         obj.equity_demand_percentage=_b.equity_demand_percentage;
+        obj.last_countered_user_type="Borrower";
         obj.save();
 
         return res.status(200).json({
