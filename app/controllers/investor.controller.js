@@ -18,6 +18,7 @@ exports.viewBusinessEquityApplications = async (req, res) => {
                 else{
                     const user=await User.findById(obj[i].user_id);
                     const obj2={
+                        "application_id": obj[i]._id,
                         "name": user.name,
                         "email": user.email,
                         "phone_no": user.phone_no,
@@ -30,6 +31,7 @@ exports.viewBusinessEquityApplications = async (req, res) => {
             else{
                 const user=await User.findById(obj[i].user_id);
                 const obj2={
+                    "application_id": obj[i]._id,
                     "name": user.name,
                     "email": user.email,
                     "phone_no": user.phone_no,

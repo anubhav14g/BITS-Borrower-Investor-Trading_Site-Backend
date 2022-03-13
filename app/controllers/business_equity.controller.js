@@ -116,6 +116,7 @@ exports.viewOpenDetailedView = async (req, res) => {
         for(var i=0;i<obj.length;i++){
             let user= await User.findById(obj[i].investor_id);
             let a={
+                "investor_id": user._id,
                 "investor_name": user.name,
                 "investor_email": user.email,
                 "investor_phone_no": user.phone_no,
