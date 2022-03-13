@@ -23,7 +23,8 @@ exports.viewBusinessEquityApplications = async (req, res) => {
                         "email": user.email,
                         "phone_no": user.phone_no,
                         "ask_amount": p.amount,
-                        "equity_demand_percentage": p.equity_demand_percentage 
+                        "equity_demand_percentage": p.equity_demand_percentage ,
+                        "last_countered_user_type": p.last_countered_user_type
                     }
                     array.push(obj2);
                 }
@@ -36,7 +37,8 @@ exports.viewBusinessEquityApplications = async (req, res) => {
                     "email": user.email,
                     "phone_no": user.phone_no,
                     "ask_amount": obj[i].amount,
-                    "equity_demand_percentage": obj[i].equity_demand_percentage 
+                    "equity_demand_percentage": obj[i].equity_demand_percentage,
+                    "last_countered_user_type": obj[i].last_countered_user_type 
                 }
                 array.push(obj2);
             }

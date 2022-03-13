@@ -24,7 +24,8 @@ const statusBusinessEquitySchema = new mongoose.Schema({
         type: Number,
     },
     last_countered_user_type:{
-        type: String
+        type: String,
+        default: "Borrower"
     }
 }
 ,

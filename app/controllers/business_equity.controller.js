@@ -124,6 +124,7 @@ exports.viewOpenDetailedView = async (req, res) => {
                 "rejected": obj[i].rejected,
                 "amount": obj[i].amount,
                 "equity_demand_percentage": obj[i].equity_demand_percentage,
+                "last_countered_user_type": obj[i].last_countered_user_type
             }
             array.push(a);
         }
