@@ -38,7 +38,7 @@ exports.viewBusinessEquityApplications = async (req, res) => {
                     "phone_no": user.phone_no,
                     "ask_amount": obj[i].amount,
                     "equity_demand_percentage": obj[i].equity_demand_percentage,
-                    "last_countered_user_type": obj[i].last_countered_user_type 
+                    "last_countered_user_type": "Borrower" 
                 }
                 array.push(obj2);
             }
