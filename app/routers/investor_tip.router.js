@@ -12,4 +12,6 @@ router.get("/investor_tip/dislike/tip/:tip_id", jwtMiddleware.verify, investorTi
 
 router.post("/investor_tip/comment/tip/:tip_id", jwtMiddleware.verify, investorTipController.commentTip);
 
+router.get("/investor_tip/get/all/comments/tip/:tip_id", investorTipController.getAllComments);
+
 module.exports = router;
