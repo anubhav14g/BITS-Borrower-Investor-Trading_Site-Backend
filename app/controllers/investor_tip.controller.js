@@ -167,10 +167,22 @@ exports.getAllComments = async (req, res) => {
             return new Date(b.createdAt) - new Date(a.createdAt);
         })
 
+        let array=[];
+        for(var i=0;i<tip.comments.length;i++){
+            let user= await User.findById(tip.comments[i].userId);
+            let obj={
+                "name": user.name,
+                "email": user.email,
+                "comment": tip.comments[i].comment,
+                "createdAt": tip.comments[i].createdAt,
+            }
+            array.push(obj);
+        }
+
         return res.status(200).json({
             "status": "true",
             "message": "List of all comments of a tip are below",
-            "data": tip.comments
+            "data": array
         });
     }
     catch(err){
