@@ -11,7 +11,8 @@ https://github.com/anubhav14g/BITS-Borrower-Investor-Trading_Site-Backend
 
 # Heroku Url
 
-https://anubhavg-bits.herokuapp.com
+<!-- https://anubhavg-bits.herokuapp.com -->
+https://anubhavg-bits.onrender.com
 
 # Postman Api Url
 
